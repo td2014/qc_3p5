@@ -12,3 +12,23 @@ To jump into the basic ideas of Quantum Computation, it is worthwhile to introdu
 
 We will consider that the qubit has basis states which form a linear vector space.  We are interested for now in qubits that have two possible basis states which are orthogonal (with the meaning exactly equivalent to the linear algebra terminology and concept).  We can represent these two states as 
 :math:`\lvert0\rangle` and :math:`\lvert1\rangle`.  We can continue on to define :math:`\lvert+\rangle=\frac{1}{\sqrt{2}}(\lvert0\rangle+\lvert1\rangle)` and :math:`\lvert-\rangle=\frac{1}{\sqrt{2}}(\lvert0\rangle-\lvert1\rangle)`.
+
+One immediate question is, can you construct and operator that can take a qubit in a given state and convert it to another?  This is an exercise.  
+
+To be concrete, start with :math:`\lvert0\rangle` and place it into state :math:`\lvert+\rangle` by means of an operator.  To start simply, let us consider the following:
+
+.. math::
+
+   \begin{bmatrix}
+      1 \\
+      1 \\
+   \end{bmatrix}
+   =
+   \begin{bmatrix}
+      a && b \\
+      c && d \\
+   \end{bmatrix}
+   \begin{bmatrix}
+      1 \\
+      0 \\
+   \end{bmatrix}
