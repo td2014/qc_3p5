@@ -43,6 +43,12 @@
             
   <div class="section" id="hardware-considerations">
 <h1>Hardware Considerations<a class="headerlink" href="#hardware-considerations" title="Permalink to this headline">¶</a></h1>
+<p>We should delve more deeply into the hardware aspects of quantum computers and qubits.  The key element that needs to be implemented is one or more qubits along with appropriate circuitry or instrumentation to manipulate the qubits to perform computation.  Some of the challenges include being able to create a qubit which is stable for relatively long periods of time (ideally infinite) yet at the same time can instantly respong to a state change input or measurement input.</p>
+<div class="section" id="josephson-junctions">
+<h2>Josephson Junctions<a class="headerlink" href="#josephson-junctions" title="Permalink to this headline">¶</a></h2>
+<p>Before getting into the details of a fully built up quantum computer, it is useful to consider at some length the Josephson Junction.  Why?  Because, many practical qubits are constructed with Josephson Junctions as a key building block.  The Josephsen Junction, in the most simple terms, produces some sort of response (voltage or current) which is linearly proportional to the phase difference of the wave functions of two superconductors on either side of a barrier.  Thus, it is a linear frequency-to-voltage converter.  Also, it has the inverse capability by which it can be a voltage-to-frequency converter.  (ref: <a class="reference external" href="https://en.wikipedia.org/wiki/Josephson_effect">https://en.wikipedia.org/wiki/Josephson_effect</a>).</p>
+<p>How do we make a qubit using this device?  One approach is to construct a circuit which includes two Josephson Junctions which is coupled to magnetic flux which transits the loop area.  We’ll explore this basic design.</p>
+</div>
 </div>
 
 
@@ -69,7 +75,10 @@
 <li class="toctree-l1"><a class="reference internal" href="quantum_field_theory.html">Quantum Field Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="key_mathematics.html">Key Mathematics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="introductory_applications.html">Introductory Applications</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Hardware Considerations</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hardware Considerations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#josephson-junctions">Josephson Junctions</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="advanced_quantum_theory.html">Advanced Quantum Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="computational_challenges.html">Computational Challenges</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conclusions.html">Conclusions</a></li>
