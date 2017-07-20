@@ -1,0 +1,14 @@
+Quantum Mechanics
+=================
+
+To begin with, we will avoid philosophical debates about "quantum weirdness" in the document.  Whether or not the observations make sense based on our common-sense intuition is a separate topic.  The starting point for the approach in this work is to take the theory and resulting predictions, and compare them to experimental results to determine validity.
+
+The other aspect will be to delve into various topics as deeply as necessary to extract the crucial elements.  This exploration may not be uniform in all cases.  In some aspects, deep-dives may be required or desired, and in others basic results or perhaps intermediate level results will be explored to assure reasonable understanding.
+
+Quick Start
+===========
+
+To jump into the basic ideas of Quantum Computation, it is worthwhile to introduce some basic notation, concepts, and an example calculation (inspired by Patrick Hayden video lecture I: https://sitp.stanford.edu/video/quantum-computational-universe-1-2).  In particular, let us focus the dicussion on a single "qubit" which is the fundamental element of a quantum mechanical computer.  We will discuss how computations can be done with a qubit later, but for now just assume that it is possible to extract a computational result using the qubit as a part of this operation.
+
+We will consider that the qubit has basis states which form a linear vector space.  We are interested for now in qubits that have two possible basis states which are orthogonal (with the meaning exactly equivalent to the linear algebra terminology and concept).  We can represent these two states as 
+:math:`\lvert0\rangle` and :math:`\lvert1\rangle`.  We can continue on to define :math:`\lvert+\rangle=\frac{1}{\sqrt{2}}(\lvert0\rangle+\lvert1\rangle)` and :math:`\lvert-\rangle=\frac{1}{\sqrt{2}}(\lvert0\rangle-\lvert1\rangle)`.
