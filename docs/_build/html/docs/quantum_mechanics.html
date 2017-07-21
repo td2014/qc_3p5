@@ -45,9 +45,8 @@
 <h1>Quantum Mechanics<a class="headerlink" href="#quantum-mechanics" title="Permalink to this headline">¶</a></h1>
 <p>To begin with, we will avoid philosophical debates about “quantum weirdness” in the document.  Whether or not the observations make sense based on our common-sense intuition is a separate topic.  The starting point for the approach in this work is to take the theory and resulting predictions, and compare them to experimental results to determine validity.</p>
 <p>The other aspect will be to delve into various topics as deeply as necessary to extract the crucial elements.  This exploration may not be uniform in all cases.  In some aspects, deep-dives may be required or desired, and in others basic results or perhaps intermediate level results will be explored to assure reasonable understanding.</p>
-</div>
 <div class="section" id="quick-start">
-<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
+<h2>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
 <p>To jump into the basic ideas of Quantum Computation, it is worthwhile to introduce some basic notation, concepts, and an example calculation (inspired by Patrick Hayden video lecture I: <a class="reference external" href="https://sitp.stanford.edu/video/quantum-computational-universe-1-2">https://sitp.stanford.edu/video/quantum-computational-universe-1-2</a>).  In particular, let us focus the dicussion on a single “qubit” which is the fundamental element of a quantum mechanical computer.  We will discuss how computations can be done with a qubit later, but for now just assume that it is possible to extract a computational result using the qubit as a part of this operation.</p>
 <p>We will consider that the qubit has basis states which form a linear vector space.  We are interested for now in qubits that have two possible basis states which are orthogonal (with the meaning exactly equivalent to the linear algebra terminology and concept).  We can represent these two states as
 <span class="math">\(\lvert0\rangle\)</span> and <span class="math">\(\lvert1\rangle\)</span>.  We can continue on to define <span class="math">\(\lvert+\rangle=\frac{1}{\sqrt{2}}(\lvert0\rangle+\lvert1\rangle)\)</span> and <span class="math">\(\lvert-\rangle=\frac{1}{\sqrt{2}}(\lvert0\rangle-\lvert1\rangle)\)</span>.</p>
@@ -67,6 +66,15 @@
    1 \\
    0 \\
 \end{bmatrix}\end{split}\]</div>
+</div>
+<div class="section" id="a-first-quantum-program">
+<h2>A first quantum program.<a class="headerlink" href="#a-first-quantum-program" title="Permalink to this headline">¶</a></h2>
+<p>If we wish to use a quantum qubit to generate a random integer (0,1), we first will apply an operator to put it into a superposition state, and then we will make a measurement which will yield a 0 or 1.  Note that there is no way to predict ahead of time what this value will be.  Contrast this will the analogous operation on a classical computer.  Every random number will be a predictable result of a given input (through some sort of mapping function), which yields the idea of the pseudo-random sequence.  This is a key point, and is worth spending some time considering this aspect of quantum computation.</p>
+</div>
+<div class="section" id="a-quantum-algorithm">
+<h2>A quantum algorithm.<a class="headerlink" href="#a-quantum-algorithm" title="Permalink to this headline">¶</a></h2>
+<p>Grover’s algorithm is one of the basic building blocks that illustrate a quantum algorithm.  Basically, the algorithm allows for searching for a value in time <span class="math">\(O(\sqrt(n))\)</span> as opposed to a regular linear search <span class="math">\(O(n)\)</span>, in some array.  We’ll go into the basic idea of the algorithm and then show an implementation using the ideas of the quantum gate operators.  The operators themselves will naturally follow from the earlier discussions about the quantum matrices as well will see.</p>
+</div>
 </div>
 
 
@@ -88,8 +96,12 @@
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quantum Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#quick-start">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quantum Mechanics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a-first-quantum-program">A first quantum program.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a-quantum-algorithm">A quantum algorithm.</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="quantum_field_theory.html">Quantum Field Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="key_mathematics.html">Key Mathematics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="introductory_applications.html">Introductory Applications</a></li>

@@ -6,7 +6,7 @@ To begin with, we will avoid philosophical debates about "quantum weirdness" in 
 The other aspect will be to delve into various topics as deeply as necessary to extract the crucial elements.  This exploration may not be uniform in all cases.  In some aspects, deep-dives may be required or desired, and in others basic results or perhaps intermediate level results will be explored to assure reasonable understanding.
 
 Quick Start
-===========
+-----------
 
 To jump into the basic ideas of Quantum Computation, it is worthwhile to introduce some basic notation, concepts, and an example calculation (inspired by Patrick Hayden video lecture I: https://sitp.stanford.edu/video/quantum-computational-universe-1-2).  In particular, let us focus the dicussion on a single "qubit" which is the fundamental element of a quantum mechanical computer.  We will discuss how computations can be done with a qubit later, but for now just assume that it is possible to extract a computational result using the qubit as a part of this operation.
 
@@ -32,3 +32,16 @@ To be concrete, start with :math:`\lvert0\rangle` and place it into state :math:
       1 \\
       0 \\
    \end{bmatrix}
+
+
+
+A first quantum program.
+------------------------
+
+If we wish to use a quantum qubit to generate a random integer (0,1), we first will apply an operator to put it into a superposition state, and then we will make a measurement which will yield a 0 or 1.  Note that there is no way to predict ahead of time what this value will be.  Contrast this will the analogous operation on a classical computer.  Every random number will be a predictable result of a given input (through some sort of mapping function), which yields the idea of the pseudo-random sequence.  This is a key point, and is worth spending some time considering this aspect of quantum computation.
+
+
+A quantum algorithm.
+--------------------
+
+Grover's algorithm is one of the basic building blocks that illustrate a quantum algorithm.  Basically, the algorithm allows for searching for a value in time :math:`O(\sqrt(n))` as opposed to a regular linear search :math:`O(n)`, in some array.  We'll go into the basic idea of the algorithm and then show an implementation using the ideas of the quantum gate operators.  The operators themselves will naturally follow from the earlier discussions about the quantum matrices as well will see.
