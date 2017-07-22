@@ -43,6 +43,14 @@
             
   <div class="section" id="key-mathematics">
 <h1>Key Mathematics<a class="headerlink" href="#key-mathematics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="linear-algebra">
+<h2>Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tensor-networks">
+<h2>Tensor Networks<a class="headerlink" href="#tensor-networks" title="Permalink to this headline">¶</a></h2>
+<p>Some useful descriptions in what are termed “Tensor Networks” has been published recently (ref:  Orus, R. A Practical Introduction to Tensor Networks: Matrix Product States and Projected Entangled Pair States:  <a class="reference external" href="https://arxiv.org/abs/1306.2164">https://arxiv.org/abs/1306.2164</a> ).
+To summarize, these tensor networks are a mathematical building block for describing quantum systems in a natural fashion, with network connections representing the couplings and entanglements of quantum systems.  One of the key aspects that is brought up in the above paper, and has an interesting analog in classical computation is the following.  Hilbert space, which represents the vector space of quantum states is exponential in complexity.  That is to say that for a practical sized system, say spin-<span class="math">\(1/2\)</span>, you will have <span class="math">\(2^{N}\)</span> states, with <span class="math">\(N\)</span> on the order of <span class="math">\(10^{23}\)</span>, since each quantum state can be in one of two values.  This can be immediately considered an analogy to memory storage in a digital computer.  For example, consider a binary image that is 16x16 in size.  How many states can this represent?  The answer is <span class="math">\(2^{16\times16}\)</span> approximately the number of estimated particles in the known universe - <span class="math">\(10^{81}\)</span>.  If this is staggering enough, consider how long it would take to generate all possible states (1 or 0 at each pixel location) in such a 16x16 image.  Assume that we have a very fast computer which can update itself in a nano-second <span class="math">\(\approx 2^{-30}\)</span> seconds.  Therefore it would take approximately, <span class="math">\(2^{16\times\16-30}\)</span> seconds which is about <span class="math">\(10^{68}\)</span> seconds.</p>
+</div>
 </div>
 
 
@@ -66,7 +74,11 @@
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quantum_mechanics.html">Quantum Mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quantum_field_theory.html">Quantum Field Theory</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Key Mathematics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Key Mathematics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#linear-algebra">Linear Algebra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tensor-networks">Tensor Networks</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="introductory_applications.html">Introductory Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hardware_considerations.html">Hardware Considerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="advanced_quantum_theory.html">Advanced Quantum Theory</a></li>
