@@ -48,8 +48,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'qc_3p5'
-copyright = '2017, Anthony Daniell'
-author = 'Anthony Daniell'
+copyright = '2017, Anthony L. Daniell'
+author = 'Anthony L. Daniell'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
