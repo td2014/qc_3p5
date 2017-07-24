@@ -9,3 +9,9 @@ Josephson Junctions
 Before getting into the details of a fully built up quantum computer, it is useful to consider at some length the Josephson Junction.  Why?  Because, many practical qubits are constructed with Josephson Junctions as a key building block.  The Josephsen Junction, in the most simple terms, produces some sort of response (voltage or current) which is linearly proportional to the phase difference of the wave functions of two superconductors on either side of a barrier.  Thus, it is a linear frequency-to-voltage converter.  Also, it has the inverse capability by which it can be a voltage-to-frequency converter.  (ref: https://en.wikipedia.org/wiki/Josephson_effect).
 
 How do we make a qubit using this device?  One approach is to construct a circuit which includes two Josephson Junctions which is coupled to magnetic flux which transits the loop area.  We'll explore this basic design.
+
+
+Quantum Dot Qubits
+------------------
+
+Another type of qubit is the Quantum Dot qubit, constructed using Si-based semiconductor materials.  A recent paper by Schoenfield and others describes the manipulation of "valley-states" in such devices (Ref: https://www.nature.com/articles/s41467-017-00073-x ).  In paticular, these devices are activated using electric pulses in the sub-nanosecond range of a few tens of mV.  The :math:`{T_{2}}^*` is approximates 0.9 nanoseconds in this particular case.
