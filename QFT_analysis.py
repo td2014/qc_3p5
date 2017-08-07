@@ -8,7 +8,6 @@ Created on Sun Aug  6 18:03:17 2017
 import math
 import cmath
 
-
 #
 # Fourier Transform
 # for binary represented
@@ -17,5 +16,18 @@ import cmath
 L=4
 
 #
-# ENd of script
+# Our 1D- arrays to be transformed
+# are of size 2^L
+#
+
+#
+# We have an expansion for a*c
+#
+# (a0+a1*2+a2*4+..+a{L-1}*2^{L-1}) x 
+# (c0+c1*2+c2*4+...c{L-1}*2^{L-1}) 
+#
+#
+
+#
+# End of script
 #
