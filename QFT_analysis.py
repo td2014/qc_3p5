@@ -51,6 +51,22 @@ X15 = 0.0+1.j
 
 X = np.array([X0,X1,X2,X3,X4,X5,X6,X7,X8,X9,X10,X11,X12,X13,X14,X15] )
 
+L_test=20
+#
+# Create the j k loop
+#
+in_count = 0
+out_count = 0
+for j in range(L_test):
+    for k in range(L_test):
+        s = j+k
+        if s >= L_test:
+            out_count = out_count+1
+        else:
+            in_count = in_count+1
+
+print('ratio = ', 1.0*out_count/in_count)
+
 #
 # End of script
 #
