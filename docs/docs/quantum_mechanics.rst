@@ -48,7 +48,7 @@ Grover's algorithm is one of the basic building blocks that illustrate a quantum
 
 However, we first present the Quantum Fourier Transform and then revisit Grover's algorithm.  The Fourier Transform is well-known in applications of signal processing as it provides for methods for analyzing signal content based on a transformation from time domain to frequency domain.  This had many uses such as a building block for speech recognition as an example.  Interestingly enough, the Fourier Transform also has applications in number theory, particularly in the realm of multiplication of large numbers.  The basic reason is that a product of two large numbers can be effectively carried out by a method called the Schömhage-Strassen algorithm (https://en.wikipedia.org/wiki/Sch%C3%B6nhage%E2%80%93Strassen_algorithm) which relies on the fact that a convolution (which is effectively how a regular multiplication is done) can be efficiently computed using the product of two Fourier Transforms.
 
-The basic formulation of the discrete Fourier transform, upon which the Quantum Fourier Transform is based is the following, where our notation and approach is after Coppersmiths work [Coppersmith1994].:
+The basic formulation of the discrete Fourier transform, upon which the Quantum Fourier Transform is based is the following, where our notation and approach is after Coppersmiths work [Coppersmith1994]_:
 
 .. [Coppersmith1994] D. Coppersmith, An Approximate Fourier Transform Useful in Quantum Factoring. IBM Research Report.  July 1994.  Retrieved from https://arxiv.org/pdf/quant-ph/0201067.pdf
 
