@@ -54,4 +54,4 @@ The basic formulation of the discrete Fourier transform, upon which the Quantum 
 
 .. math::
 
-  Y_{c} = \frac{1}{\sqrt{2^{L}}} \sum_{a} X_{a} \exp \lefti (\frac{ \pi i}{2^{L}} a c \right)
+  Y_{c} = \frac{1}{\sqrt{2^{L}}} \sum_{a} X_{a} \exp \left (\frac{ \pi i}{2^{L}} a c \right)
