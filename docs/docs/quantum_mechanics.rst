@@ -45,3 +45,7 @@ A quantum algorithm.
 --------------------
 
 Grover's algorithm is one of the basic building blocks that illustrate a quantum algorithm.  Basically, the algorithm allows for searching for a value in time :math:`O(\sqrt(n))` as opposed to a regular linear search :math:`O(n)`, in some array.  We'll go into the basic idea of the algorithm and then show an implementation using the ideas of the quantum gate operators.  The operators themselves will naturally follow from the earlier discussions about the quantum matrices as well will see.
+
+However, we first present the Quantum Fourier Transform and then revisit Grover's algorithm.  The Fourier Transform is well-known in applications of signal processing as it provides for methods for analyzing signal content based on a transformation from time domain to frequency domain.  This had many uses such as a building block for speech recognition as an example.  Interestingly enough, the Fourier Transform also has applications in number theory, particularly in the realm of multiplication of large numbers.  The basic reason is that a product of two large numbers can be effectively carried out by a method called the Schömhage-Strassen algorithms (https://en.wikipedia.org/wiki/Sch%C3%B6nhage%E2%80%93Strassen_algorithm) which relies on the fact that aconvolution (which is effectively how a regular multiplicaton is done) can be efficiently computed using the product of two Fourier Transforms.
+
+
