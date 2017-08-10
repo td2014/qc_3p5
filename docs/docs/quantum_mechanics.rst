@@ -54,6 +54,3 @@ The basic formulation of the discrete Fourier transform, upon which the Quantum 
 
    Y_{c} = \frac{1}{\sqrt{2^{L}}} \sum_{a} X_{a} \exp \left (\frac{2 \pi i}{2^{L}} a c \right)
 
-
-.. [Coppersmith1994] D. Coppersmith, An Approximate Fourier Transform Useful in Quantum Factoring. IBM Research Report.  July 1994.  Retrieved from https://arxiv.org/pdf/quant-ph/0201067.pdf
-
