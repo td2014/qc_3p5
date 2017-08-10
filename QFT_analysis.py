@@ -7,7 +7,7 @@ Created on Sun Aug  6 18:03:17 2017
 """
 import math
 import cmath
-
+import numpy as np
 #
 # Fourier Transform
 # for binary represented
@@ -26,7 +26,30 @@ L=4
 # (a0+a1*2+a2*4+..+a{L-1}*2^{L-1}) x 
 # (c0+c1*2+c2*4+...c{L-1}*2^{L-1}) 
 #
+# ==> a0(c0+c1*2+c2*4+...+c{L-1}*2^{L-1})
+# + (a1*2)(c0+c1*2+c2*4+...+c{L-1}*2^{L-1}))
+# + ...
+# double sum:  ajck*2^{j+k)}
 #
+X0 = 0.0+1.j
+X1 = 1.0+0.j
+X2 = 0.0+1.j
+X3 = 0.0+1.j
+X4 = 1.0+0.j
+X5 = 0.0+1.j
+X6 = 0.0+1.j
+X7 = 1.0+0.j
+X8 = 0.0+1.j
+X9 = 0.0+1.j
+X10 = 1.0+0.j
+X11 = 0.0+1.j
+X12 = 0.0+1.j
+X13 = 1.0+0.j
+X14 = 0.0+1.j
+X15 = 0.0+1.j
+
+
+X = np.array([X0,X1,X2,X3,X4,X5,X6,X7,X8,X9,X10,X11,X12,X13,X14,X15] )
 
 #
 # End of script
