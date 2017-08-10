@@ -50,8 +50,10 @@ However, we first present the Quantum Fourier Transform and then revisit Grover'
 
 The basic formulation of the discrete Fourier transform, upon which the Quantum Fourier Transform is based is the following, where our notation and approach is after Coppersmiths work [Coppersmith1994]_:
 
-.. [Coppersmith1994] D. Coppersmith, An Approximate Fourier Transform Useful in Quantum Factoring. IBM Research Report.  July 1994.  Retrieved from https://arxiv.org/pdf/quant-ph/0201067.pdf
-
 .. math::
 
-  Y_{c} = \frac{1}{\sqrt{2^{L}}} \sum_{a} X_{a} \exp \left (\frac{ \pi i}{2^{L}} a c \right)
+   Y_{c} = \frac{1}{\sqrt{2^{L}}} \sum_{a} X_{a} \exp \left (\frac{2 \pi i}{2^{L}} a c \right)
+
+
+.. [Coppersmith1994] D. Coppersmith, An Approximate Fourier Transform Useful in Quantum Factoring. IBM Research Report.  July 1994.  Retrieved from https://arxiv.org/pdf/quant-ph/0201067.pdf
+
